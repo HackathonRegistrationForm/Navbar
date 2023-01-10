@@ -1,0 +1,45 @@
+input{
+    width:300px;
+    height:20px;
+    border-radius: 20px;
+    padding: 17px;
+}
+
+mat-nav-list{
+    background-color:rgb(103, 148, 207);
+    color: #000;
+    height:100%;
+    cursor: pointer;
+}
+.a{
+    color: white;
+    color : rgb(15, 116, 249);
+}
+mat-toolbar{
+    background-color: rgb(97, 171, 196)
+}
+.div{
+    background-color: white;
+}
+p{
+    text-align: center;
+}
+span{
+    float: bottom;
+}
+img{
+    height:30px
+}
+
+
+.space{
+    padding-right: 13%;
+    color: white;
+}
+.bsbspace{
+    padding-right: 10%;
+    color: white;
+}
+.bgclr:hover{
+    background-color: white;
+}

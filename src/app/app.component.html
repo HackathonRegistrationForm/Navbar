@@ -1,0 +1,72 @@
+<mat-toolbar >
+
+  <mat-toolbar-row>
+
+    <button mat-icon-button>
+
+      <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+
+    </button>
+
+    <h1 class="bsbspace"> B2B</h1>
+
+    <br>
+
+    <h1 class="space"> Ro-One</h1>
+
+    <h1 class="space">Home</h1>
+
+    <h1 class="space"> Help</h1>
+
+    <h1 class="space">Notifications</h1>
+
+    <h1 class="space">Account</h1>
+    
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav opend="true" mode="side">
+
+    <mat-nav-list>
+
+      <a href="/dashboard" class="bgclr" mat-list-item><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_dashboard_48px-64.png">&nbsp;Dashboard</a>
+
+       <a href="/organization" class="bgclr" mat-list-item><img src="https://cdn-icons-png.flaticon.com/512/2560/2560014.png">&nbsp;Organization</a>
+
+       <a href="/domains" class="bgclr" mat-list-item><img src="https://img.icons8.com/external-outline-juicy-fish/2x/external-sell-side-hustles-outline-outline-juicy-fish-2.png">&nbsp;Domains</a>
+
+      <a href="/users" class="bgclr" mat-list-item><img src="https://th.bing.com/th/id/R.8e2c571ff125b3531705198a15d3103c?rik=gzhbzBpXBa%2bxMA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-big-image-png-2240.png&ehk=VeWsrun%2fvDy5QDv2Z6Xm8XnIMXyeaz2fhR3AgxlvxAc%3d&risl=&pid=ImgRaw&r=0">&nbsp;Users</a>
+
+      <a href="/groups" class="bgclr" mat-list-item><img src="https://th.bing.com/th/id/R.cbd350f126006caf1dd2c29e68bb8cd4?rik=YkWEmFdMD797EQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ficons8%2fios7%2f512%2fHealthcare-Groups-icon.png&ehk=pL2sZ1cX5ow0SjIJoRgIVoNAAbuLrviVwoaU4rtZi%2fc%3d&risl=&pid=ImgRaw&r=0" >&nbsp;Groups</a>
+
+     <a href="/mailsettings" class="bgclr" mat-list-item> <img src="https://cdn2.iconfinder.com/data/icons/mail-vol-1-1/24/_settings_mail-512.png">&nbsp; Mail Settings</a>
+
+     <a href="/securitycompliances" class="bgclr" mat-list-item> <img src="https://thechurchco-production.s3.amazonaws.com/uploads/sites/2271/2020/11/Safe.png">&nbsp;Security & Compliances</a>
+
+      <a href="/subscription" class="bgclr" mat-list-item><img src="https://cdn4.iconfinder.com/data/icons/seo-internet-marketing-set-2-1/128/1-116-256.png">&nbsp;Subscription</a>
+
+       <a href="/audit" class="bgclr" mat-list-item><img src="https://cdn1.iconfinder.com/data/icons/personal-business-finance-set-4/256/Personal__Business_Finance-04-512.png">&nbsp;Audit</a>
+
+       <a href="/group" class="bgclr" mat-list-item><img src="https://th.bing.com/th/id/R.cbd350f126006caf1dd2c29e68bb8cd4?rik=YkWEmFdMD797EQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ficons8%2fios7%2f512%2fHealthcare-Groups-icon.png&ehk=pL2sZ1cX5ow0SjIJoRgIVoNAAbuLrviVwoaU4rtZi%2fc%3d&risl=&pid=ImgRaw&r=0">&nbsp;Group</a>
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <div style="height: 99vh">
+
+      <router-outlet>
+
+      </router-outlet>  
+
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
